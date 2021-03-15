@@ -17,7 +17,7 @@ def V_A_Gamma(alph,bet):
     U=rand()
     F= -(log(1-U))/(bet)
     while i<alph:
-        u=rand
+        u=rand()
         F+=-(log(1-u))/(bet)
         i=i+1
     return F
