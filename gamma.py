@@ -17,7 +17,8 @@ def V_A_Gamma(alph,bet):
     U=rand()
     F= -(log(1-U))/(bet)
     while i<alph:
-        F+=-(log(1-U))/(bet)
+        u=rand
+        F+=-(log(1-u))/(bet)
         i=i+1
     return F
 
@@ -70,5 +71,5 @@ Repartition_MC(Y,a,delta,Nmc)
 print("esperance empirique :",np.mean(Y))
 print("esperance theorique :" ,alph/bet)
 print()
-print("variance empirique :",np.std(Y)*np.std(Y)/5)
+print("variance empirique :",np.std(Y)*np.std(Y))
 print("variance theorique :", alph/(bet*bet))
